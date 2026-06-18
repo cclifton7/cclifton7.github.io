@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose2Snooze Support</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 40px 22px;
+      color: #1c1c1e; background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #f2f2f7; background: #000; }
+      a { color: #0a84ff; }
+      .step b { color: #fff; }
+    }
+    h1 { font-size: 1.9rem; margin-bottom: 0.1em; }
+    h2 { font-size: 1.2rem; margin-top: 1.8em; }
+    .tagline { color: #8e8e93; margin-top: 0; }
+    a { color: #007aff; }
+    .card {
+      border: 1px solid rgba(128,128,128,0.3); border-radius: 14px;
+      padding: 4px 18px; margin: 14px 0;
+    }
+    ol.steps { padding-left: 1.2em; }
+    ol.steps li { margin: 10px 0; }
+    .step b { color: #000; }
+    details {
+      border: 1px solid rgba(128,128,128,0.3); border-radius: 10px;
+      padding: 10px 14px; margin: 10px 0;
+    }
+    summary { font-weight: 600; cursor: pointer; }
+    details p { margin: 10px 0 4px; color: #6c6c70; }
+    @media (prefers-color-scheme: dark) { details p { color: #aeaeb2; } }
+    .contact {
+      text-align: center; margin: 28px 0; padding: 24px; border-radius: 14px;
+      background: #007aff; color: #fff;
+    }
+    .contact a { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+    footer { margin-top: 3em; font-size: 0.85rem; color: #8e8e93; text-align: center; }
+    .pill { display:inline-block; background: rgba(0,122,255,0.15); color:#007aff;
+            border-radius: 20px; padding: 2px 10px; font-size: 0.8rem; font-weight:600; }
+  </style>
+</head>
+<body>
+  <h1>Choose2Snooze Support</h1>
+  <p class="tagline">Flexible alarms with the right schedule, sound, and snooze — on iPhone and Apple Watch.</p>
+
+  <div class="contact">
+    <div>Need help? Email the developer:</div>
+    <a href="mailto:choose2snoozeapp@gmail.com?subject=Choose2Snooze%20Support">choose2snoozeapp@gmail.com</a>
+  </div>
+
+  <h2>Getting started</h2>
+  <div class="card">
+    <ol class="steps">
+      <li class="step"><b>Add an alarm.</b> Tap <b>+</b> to create a new alarm and set the time.</li>
+      <li class="step"><b>Choose a schedule.</b> Pick <b>Once</b>, <b>Daily</b>, <b>Week Days</b>, <b>Bi-Weekly</b>, or <b>Monthly</b> — or tap specific dates on the calendar, and each date becomes its own alarm.</li>
+      <li class="step"><b>Pick a sound.</b> Use a built-in ringtone, a song from your music library, or record your own. <span class="pill">See "song not showing?" below</span></li>
+      <li class="step"><b>Set your snooze.</b> Choose how long snooze lasts for that alarm.</li>
+      <li class="step"><b>Allow alarms.</b> The first time, allow Choose2Snooze to schedule alarms so they can alert you reliably.</li>
+    </ol>
+  </div>
+
+  <h2>Schedules</h2>
+  <div class="card">
+    <p><b>Once</b> fires a single time, then is done. <b>Daily</b> repeats every day (or only the days you choose). <b>Week Days</b> covers Monday–Friday. <b>Bi-Weekly</b> and <b>Monthly</b> repeat on a longer cycle. To skip just the next ring without turning the alarm off, <b>swipe right</b> on it — it stays active for every ring after.</p>
+  </div>
+
+  <h2>Custom sounds</h2>
+  <div class="card">
+    <p>Each alarm can use its own sound: a built-in ringtone, a song from your device's music library, or audio you record yourself (it loops while the alarm fires). You can set where a song starts so it opens on the right part of the track.</p>
+  </div>
+
+  <h2>Wake up your home (HomeKit)</h2>
+  <div class="card">
+    <p>An alarm can trigger a HomeKit scene when it fires — for example, turning on the lights or opening the blinds. Add a scene from the alarm's <b>Run Scene</b> option. This is optional and only requests Home access if you use it.</p>
+  </div>
+
+  <h2>Using your Apple Watch</h2>
+  <div class="card">
+    <p>Choose2Snooze includes a companion Apple Watch app so your alarms come with you.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>My alarm didn't go off. What happened?</summary>
+    <p>Make sure you allowed Choose2Snooze to schedule alarms when prompted. You can check this in the iPhone <b>Settings</b> app under Choose2Snooze. Alarms use Apple's AlarmKit, so they alert even when your phone is on silent — but they do need that permission.</p>
+  </details>
+
+  <details>
+    <summary>Why isn't my song showing up when I pick a sound?</summary>
+    <p>Songs must be downloaded to your device before they appear. Open the Music app, find your track, and tap the download button (the cloud icon with an arrow). Streaming-only tracks that haven't been saved for offline use will not appear.</p>
+  </details>
+
+  <details>
+    <summary>How do I skip just one occurrence?</summary>
+    <p>Swipe right on the alarm and choose <b>Skip Next</b>. It skips only the next ring; the alarm stays active for every occurrence after that.</p>
+  </details>
+
+  <details>
+    <summary>Can I set different snooze lengths for different alarms?</summary>
+    <p>Yes. Snooze duration is set per alarm, so each one can snooze for as long or as short as you like.</p>
+  </details>
+
+  <details>
+    <summary>How do I create alarms for specific future dates?</summary>
+    <p>When adding an alarm, tap the specific dates you want on the calendar. You can select multiple dates, and each one becomes its own alarm.</p>
+  </details>
+
+  <h2>Still need help?</h2>
+  <p>Email <a href="mailto:choose2snoozeapp@gmail.com?subject=Choose2Snooze%20Support">choose2snoozeapp@gmail.com</a> with a description of what's happening (and your device + iOS version if it's a bug). You can also use <b>Report a Bug</b> inside the app's Settings.</p>
+
+  <p><a href="/choose2snooze/privacy/">Privacy Policy</a></p>
+
+  <footer>© 2026 Choose2Snooze. Built by Casey Clifton.</footer>
+</body>
+</html>
